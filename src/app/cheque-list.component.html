@@ -1,0 +1,10 @@
+<h2>List of Cheques</h2>
+
+<p><i>Choose a cheque from the list:</i></p>
+<ul>
+  <li *ngFor="let cheque of cheques" (click)="selectCheque(cheque)">
+    <a href="javascript:;">{{cheque.name}}</a>
+  </li>
+</ul>
+
+<cheque-detail *ngIf="selectedCheque" [cheque]="selectedCheque"></cheque-detail>

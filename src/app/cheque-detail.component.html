@@ -1,0 +1,6 @@
+<hr>
+<h4>{{cheque.name}}'s Cheque Details</h4>
+<div>Name: {{cheque.name}}</div>
+<div>Date: {{cheque.date}}</div>
+<div>Amount: {{cheque.amount| currency:'USD':true:'1.2-2'}}</div>
+<div>Pay(in words): {{getAmountInWords(cheque.amount)}}</div>
